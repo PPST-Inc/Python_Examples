@@ -61,14 +61,11 @@ python python_scpi_command_by_visa_example.py --resource "TCPIP0::192.168.1.100:
 # Connect via GPIB
 python python_scpi_command_by_visa_example.py --resource "GPIB0::10::INSTR"
 
-# Connect via USB
-python python_scpi_command_by_visa_example.py --resource "USB0::0x1234::0x5678::SN123456::INSTR"
 ```
 
 **VISA Resource String Formats:**
 - **TCPIP:** `TCPIP0::<ip_address>::inst0::INSTR`
 - **GPIB:** `GPIB0::<address>::INSTR`
-- **USB:** `USB0::<vendor_id>::<product_id>::<serial>::INSTR`
 
 ---
 

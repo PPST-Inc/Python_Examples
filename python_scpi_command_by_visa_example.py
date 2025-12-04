@@ -154,19 +154,17 @@ def main():
     
     # Configure command line arguments
     parser = argparse.ArgumentParser(
-        description='Configuration of laboratory equipment using SCPI via VISA',
+        description='Configuration using SCPI via VISA',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Usage examples:
   python scpi_visa_example.py
   python scpi_visa_example.py --resource "TCPIP0::192.168.1.100::inst0::INSTR"
   python scpi_visa_example.py --resource "GPIB0::10::INSTR"
-  python scpi_visa_example.py --resource "USB0::0x1234::0x5678::SN123456::INSTR"
   
 Common VISA resource string formats:
   TCPIP: TCPIP0::<ip_address>::inst0::INSTR
   GPIB:  GPIB0::<address>::INSTR
-  USB:   USB0::<vendor_id>::<product_id>::<serial>::INSTR
         """
     )
     parser.add_argument('--resource', type=str, default=DEFAULT_RESOURCE, 

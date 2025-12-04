@@ -104,7 +104,7 @@ def scpi_command(socket):
 def main():
     # Configure command line arguments
     parser = argparse.ArgumentParser(
-        description='Configuration of laboratory equipment using SCPI',
+        description='Configuration using SCPI',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
             Usage examples:
