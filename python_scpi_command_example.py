@@ -7,7 +7,7 @@ import sys
 import argparse
 
 # Default configuration
-DEFAULT_IP = "192.168.131.193"
+DEFAULT_IP = "192.168.123.1"
 DEFAULT_PORT = 5025             # Standard SCPI port
 CONNECTION_TIMEOUT = 5          # Timeout in seconds
 
